@@ -93,8 +93,10 @@ function installTester() {
       const tgt = !P.ground && mv.tgt ? mv.tgt : ahead[0];
       if (!tgt) { held.ArrowRight = 1; return; }
       if (P.ground) { // from the edge of a platform it also tries the longer gaps
+        mv.tgt = null;
         const gap = tgt.s.x0 - P.x, up = P.y - tgt.s.top;
         if ((gap < 140 || (P.x >= P.on.s.x1 - 24 && gap < 215)) && gap > -30 && up < 160 && up > -150) { pl.buf = 8; held.Space = 1; mv.held = 20; held.ArrowRight = 1; mv.tgt = tgt; }
+        else if (P.on.s.pts && topAt(P.on.s, P.x + 6) < P.y - 12) { pl.buf = 8; held.Space = 1; mv.held = 20; held.ArrowRight = 1; mv.tgt = null; } // hop up a step on a dinosaur's back
         else if (P.x < P.on.s.x1 - 24) held.ArrowRight = 1;
       } else { const mid = (tgt.s.x0 + tgt.s.x1) / 2; if (P.x < mid - 6) held.ArrowRight = 1; else if (P.x > mid + 6 && P.y > tgt.s.top - 60) held.ArrowLeft = 1; }
       return;
