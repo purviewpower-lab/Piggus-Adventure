@@ -1,8 +1,8 @@
-Piggus Adventure check: merged4.html  compared with latest.html
-Settings: SHARPNESS 1.2, LEVELS 15, file 22.9 MB
+Piggus Adventure check: merged5.html  compared with latest.html
+Settings: SHARPNESS 1.2, LEVELS 15, file 21.8 MB
 Whole game: robot played from Level 1 to the end (5 Buffet rounds on the way). Buffet on its own: OK
 No problems found.
-No level looks different from the older file.
+Levels that look different from the older file: 11, 12
 
 Level  1 Sunny Meadow               finished: yes (3s)   real play: caught 37x   vs older file: looks the same
 Level  2 Sunny Meadow               finished: yes (27s)   real play: caught 41x   vs older file: looks the same
@@ -14,8 +14,8 @@ Level  7 Wrongfoot Prison           finished: yes (9s)   real play: caught 16x  
 Level  8 Wrongfoot Prison           finished: yes (13s)   real play: caught 18x   vs older file: looks the same
 Level  9 Under the Sea              finished: yes (29s)   real play: caught 16x   vs older file: looks the same
 Level 10 Under the Sea              finished: yes (6s)   real play: caught 24x   vs older file: looks the same
-Level 11 Dino Jungle                finished: yes (47s)   real play: caught 21x   vs older file: looks the same
-Level 12 Dino Jungle                finished: yes (32s)   real play: caught 27x   vs older file: looks the same
-Level 13 Lady Squishshot's Forest   finished: yes (28s)   real play: caught 31x   vs older file: looks the same
+Level 11 Dino Jungle                finished: yes (47s)   real play: caught 21x   vs older file: CHANGED
+Level 12 Dino Jungle                finished: yes (32s)   real play: caught 30x   vs older file: CHANGED
+Level 13 Lady Squishshot's Forest   finished: yes (28s)   real play: caught 33x   vs older file: looks the same
 Level 14 Lady Squishshot's Forest   finished: yes (5s)   real play: caught 36x   vs older file: looks the same
-Level 15 Dino-Capy boss             finished: yes (47s)   real play: caught 9x   vs older file: looks the same
+Level 15 Dino-Capy boss             finished: yes (47s)   real play: caught 8x   vs older file: looks the same
