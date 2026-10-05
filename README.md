@@ -4,6 +4,10 @@ A crossy-road style game for kids starring Piggus, a greedy, lovable pig squishm
 
 ## How to play
 
+**Play in your browser:** https://purviewpower-lab.github.io/piggus-adventure/ (on a PC or laptop with a keyboard; the page is big, so give it a moment to load).
+
+Or play it offline:
+
 1. Click the green **Code** button on this page, then **Download ZIP**, and unzip it.
 2. Open the `game` folder and double-click **Piggus-Adventure.html**. It opens in your web browser (Chrome or Edge work best). No installs needed.
 3. Play on a PC or laptop with a keyboard.
