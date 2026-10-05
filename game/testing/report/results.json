@@ -1,5 +1,5 @@
 {
- "file": "/mnt/attach/project-files/game/dino-work/merged8.html",
+ "file": "/mnt/attach/project-files/game/Piggus-Adventure.html",
  "errors": [],
  "levels": {
   "1": {
@@ -8,13 +8,13 @@
    "picStart": "pictures/L1-start.png",
    "picPlay": "pictures/L1-playing.png",
    "godFrames": 197,
-   "realDeaths": 37,
+   "realDeaths": 35,
    "deathKinds": [
     "squish",
     "splash"
    ],
    "realState": "play",
-   "diff": 0,
+   "diff": 0.0004464285714285714,
    "change": "looks the same"
   },
   "2": {
@@ -23,14 +23,14 @@
    "picStart": "pictures/L2-start.png",
    "picPlay": "pictures/L2-playing.png",
    "godFrames": 1609,
-   "realDeaths": 41,
+   "realDeaths": 34,
    "deathKinds": [
     "squish",
     "splash",
     "caught"
    ],
    "realState": "play",
-   "diff": 0,
+   "diff": 0.0011160714285714285,
    "change": "looks the same"
   },
   "3": {
@@ -39,15 +39,15 @@
    "picStart": "pictures/L3-start.png",
    "picPlay": "pictures/L3-playing.png",
    "godFrames": 233,
-   "realDeaths": 39,
+   "realDeaths": 40,
    "deathKinds": [
     "tumble",
     "sink",
-    "camel",
-    "prick"
+    "prick",
+    "camel"
    ],
    "realState": "play",
-   "diff": 0,
+   "diff": 0.0002232142857142857,
    "change": "looks the same"
   },
   "4": {
@@ -56,17 +56,17 @@
    "picStart": "pictures/L4-start.png",
    "picPlay": "pictures/L4-playing.png",
    "godFrames": 252,
-   "realDeaths": 39,
+   "realDeaths": 37,
    "deathKinds": [
     "tumble",
+    "mummy",
     "sting",
     "prick",
-    "sink",
     "camel",
-    "mummy"
+    "sink"
    ],
    "realState": "play",
-   "diff": 0,
+   "diff": 0.0004464285714285714,
    "change": "looks the same"
   },
   "5": {
@@ -88,8 +88,8 @@
    "problems": [],
    "picStart": "pictures/L6-start.png",
    "picPlay": "pictures/L6-playing.png",
-   "godFrames": 4703,
-   "realDeaths": 14,
+   "godFrames": 2309,
+   "realDeaths": 3,
    "deathKinds": [
     "capy",
     "bacon"
@@ -103,18 +103,17 @@
    "problems": [],
    "picStart": "pictures/L7-start.png",
    "picPlay": "pictures/L7-playing.png",
-   "godFrames": 513,
-   "realDeaths": 24,
+   "godFrames": 1723,
+   "realDeaths": 15,
    "deathKinds": [
     "alarm",
+    "fall",
     "dog",
     "guard",
-    "door",
-    "laser",
-    "fall"
+    "laser"
    ],
    "realState": "play",
-   "diff": 0,
+   "diff": 0.0004464285714285714,
    "change": "looks the same"
   },
   "8": {
@@ -122,19 +121,20 @@
    "problems": [],
    "picStart": "pictures/L8-start.png",
    "picPlay": "pictures/L8-playing.png",
-   "godFrames": 774,
-   "realDeaths": 29,
+   "godFrames": 290,
+   "realDeaths": 16,
    "deathKinds": [
-    "dog",
-    "fall",
-    "alarm",
-    "trapdoor",
-    "laser",
     "guard",
-    "light"
+    "fall",
+    "light",
+    "laser",
+    "dog",
+    "alarm",
+    "door",
+    "trapdoor"
    ],
    "realState": "play",
-   "diff": 0,
+   "diff": 0.0004464285714285714,
    "change": "looks the same"
   },
   "9": {
@@ -143,12 +143,12 @@
    "picStart": "pictures/L9-start.png",
    "picPlay": "pictures/L9-playing.png",
    "godFrames": 1741,
-   "realDeaths": 20,
+   "realDeaths": 22,
    "deathKinds": [
     "hook",
-    "octo",
     "shark",
-    "crab"
+    "crab",
+    "octo"
    ],
    "realState": "dead",
    "diff": 0,
@@ -160,15 +160,14 @@
    "picStart": "pictures/L10-start.png",
    "picPlay": "pictures/L10-playing.png",
    "godFrames": 332,
-   "realDeaths": 25,
+   "realDeaths": 19,
    "deathKinds": [
     "jelly",
     "hook",
-    "octo",
     "crab",
     "shark"
    ],
-   "realState": "dead",
+   "realState": "play",
    "diff": 0,
    "change": "looks the same"
   },
@@ -177,51 +176,50 @@
    "problems": [],
    "picStart": "pictures/L11-start.png",
    "picPlay": "pictures/L11-playing.png",
-   "godFrames": 1473,
-   "realDeaths": 14,
+   "godFrames": 1500,
+   "realDeaths": 17,
    "deathKinds": [
     "raptor",
     "lavafall",
     "rex",
     "spear"
    ],
-   "realState": "play",
-   "diff": 0.011830357142857142,
-   "change": "CHANGED"
+   "realState": "dead",
+   "diff": 0,
+   "change": "looks the same"
   },
   "12": {
    "world": "Dino Jungle",
    "problems": [],
    "picStart": "pictures/L12-start.png",
    "picPlay": "pictures/L12-playing.png",
-   "godFrames": 3316,
-   "realDeaths": 19,
+   "godFrames": 1923,
+   "realDeaths": 25,
    "deathKinds": [
     "lavafall",
+    "spear",
     "raptor",
     "tar",
-    "rex",
-    "spear",
-    "lava"
+    "rex"
    ],
    "realState": "play",
-   "diff": 0.9294642857142857,
-   "change": "CHANGED"
+   "diff": 0,
+   "change": "looks the same"
   },
   "13": {
    "world": "Lady Squishshot's Forest",
    "problems": [],
    "picStart": "pictures/L13-start.png",
    "picPlay": "pictures/L13-playing.png",
-   "godFrames": 305,
-   "realDeaths": 30,
+   "godFrames": 306,
+   "realDeaths": 39,
    "deathKinds": [
     "rlog",
     "snap",
     "caught",
     "splash"
    ],
-   "realState": "dead",
+   "realState": "play",
    "diff": 0,
    "change": "looks the same"
   },
@@ -231,16 +229,15 @@
    "picStart": "pictures/L14-start.png",
    "picPlay": "pictures/L14-playing.png",
    "godFrames": 318,
-   "realDeaths": 39,
+   "realDeaths": 36,
    "deathKinds": [
     "rlog",
     "caught",
-    "snap",
-    "trap",
-    "splash"
+    "splash",
+    "snap"
    ],
    "realState": "dead",
-   "diff": 0,
+   "diff": 0.0002232142857142857,
    "change": "looks the same"
   },
   "15": {
@@ -248,8 +245,8 @@
    "problems": [],
    "picStart": "pictures/L15-start.png",
    "picPlay": "pictures/L15-playing.png",
-   "godFrames": 2874,
-   "realDeaths": 8,
+   "godFrames": 3321,
+   "realDeaths": 6,
    "deathKinds": [
     "boss hit"
    ],
@@ -274,8 +271,5 @@
  "buffet": "OK",
  "buffetPic": "pictures/buffet-end.png",
  "problems": [],
- "changed": [
-  11,
-  12
- ]
+ "changed": []
 }
