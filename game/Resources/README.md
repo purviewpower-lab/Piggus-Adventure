@@ -1,6 +1,6 @@
 # Resources folder
 
-Put your own sounds (.mp3) and pictures here, next to `Piggus-Adventure.html`. They are all optional: when one is missing the game uses its built-in drawing, beep or spoken line instead. The file names must match exactly.
+Put your own sounds (.mp3) and pictures here, next to `Piggus-Adventure.html`. When one is missing the game uses its built-in drawing, beep or spoken line instead. The file names must match exactly.
 
 ## Sounds
 

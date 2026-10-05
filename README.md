@@ -36,7 +36,7 @@ Or play it offline:
 
 ## Your own pictures and sounds (optional)
 
-All the artwork and music are already built into the HTML file, so the game works on its own. You can add your own voice lines, sound effects and pictures by putting them in `game/Resources/`, next to the HTML file. See [game/Resources/README.md](game/Resources/README.md) for the file names the game looks for. Any file that's missing just uses the built-in sound or drawing instead.
+Most artwork and all the music are built into the HTML file. Piggus, Winston, the toilet, the lorries, the captured friends and the start screen are loaded from `game/Resources/`, so keep that folder next to the HTML file. You can also add your own voice lines and sounds there. See [game/Resources/README.md](game/Resources/README.md) for the file names the game looks for. Any file that's missing just uses the built-in sound or drawing instead.
 
 ## What's in this repository
 
