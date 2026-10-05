@@ -7,6 +7,7 @@ A game made for my 8-year-old daughter. It runs by double-clicking an HTML file 
 - Most artwork and music are built into the HTML file itself, so the file is about 23 MB.
 - The checklist "What goes in Resources.txt" lists every optional file name the game looks for. Missing files fall back to built-in drawings, beeps or speech bubbles.
 - Sea levels sped up on 2026-10-04 (about 8x faster to draw, same look): the underwater sway is drawn from one copy of the screen instead of 56, the water tint is painted once, the hidden sky is skipped, and sea pictures use the browser's quicker smoothing.
+- Whole game sped up on 2026-10-05 (same look and play): the ground strips, logs, sparkles and goal star are painted once at the screen's sharpness and then just copied each frame instead of being re-smoothed or re-drawn, and the screen is only redrawn when the game has actually moved on (so fast 120/144 Hz screens no longer draw everything twice). Desert, prison, dino and forest levels draw about 3x faster; the sea and supermarket were already quick. The music is already compact (about 80-96 kbps), so the file size stays about 23 MB.
 - Played only on a PC or laptop in a web browser, with the keyboard; never on tablets (James, 2026-10-04). The old tablet controls in the supermarket are still in the file but aren't worked on.
 - Desktop shortcut: points at the HTML file, with Piggus.ico from Resources as the icon.
 - When making changes: edit the latest HTML I attach, test it, and send back the whole file. Tell me if any new file names need adding to Resources.

@@ -168,11 +168,12 @@ async function openGame(browser, file, errors) {
     window.requestAnimationFrame = cb => { if (first) { first = false; } return 0; };
   });
   await page.goto(pathToFileURL(file).href, { waitUntil: 'load', timeout: 120000 });
-  // wait for the embedded pictures to finish decoding
-  let last = -1;
-  for (let k = 0; k < 40; k++) {
+  // wait for the embedded pictures (and James's own ones in Resources) to finish loading:
+  // the number of loaded pictures has to stay the same for 2 seconds, so both files being compared start with the same pictures
+  let last = -1, still = 0;
+  for (let k = 0; k < 80 && still < 8; k++) {
     const n = await page.evaluate(() => Object.keys(img).length);
-    if (n === last && k > 3) break; last = n; await page.waitForTimeout(250);
+    still = n === last ? still + 1 : 0; last = n; await page.waitForTimeout(250);
   }
   await page.evaluate(() => { if (typeof fitCanvas === 'function') fitCanvas(); });
   await page.evaluate(installTester);
@@ -270,11 +271,18 @@ function compare(a, b) {
   return diff / a.length;
 }
 
-const browser = await chromium.launch({ args: ['--autoplay-policy=no-user-gesture-required', '--mute-audio'] });
+const browser = await chromium.launch({ args: ['--autoplay-policy=no-user-gesture-required', '--mute-audio', '--allow-file-access-from-files'] });
 console.log('Checking ' + path.basename(NEW) + ' ...');
 const res = await checkFile(browser, NEW, { full: true, pictures: true });
 let old = null;
-if (OLD && fs.existsSync(OLD)) { console.log('Comparing with ' + path.basename(OLD) + ' ...'); old = await checkFile(browser, OLD, { full: false, pictures: false }); }
+if (OLD && fs.existsSync(OLD)) {
+  console.log('Comparing with ' + path.basename(OLD) + ' ...');
+  // backups in older/ have no Resources folder beside them, so check a copy placed next to the new file (it then shows the same pictures of James's)
+  const res = d => fs.existsSync(path.join(d, 'Resources'));
+  const copy = !res(path.dirname(OLD)) && res(path.dirname(NEW)) ? path.join(path.dirname(NEW), '.checker-older-copy.html') : null;
+  if (copy) fs.copyFileSync(OLD, copy);
+  try { old = await checkFile(browser, copy || OLD, { full: false, pictures: false }); } finally { if (copy) fs.rmSync(copy, { force: true }); }
+}
 await browser.close();
 
 // ---------- report ----------

@@ -14,7 +14,7 @@ It checks:
 - a robot (Piggus can't get hurt) plays Level 1 through the boss using the real level-complete, Buffet and boss screens, so every level can still be finished (if it gets stuck on a level it says so and carries on from the next one)
 - a minute of no-cheat robot play on every level, so Piggus gets caught and restarts (flags a level where nothing ever catches him)
 - the Buffet round reaches its end screen
-- with the random numbers fixed, pictures of each level at the start and 4 seconds in, compared with the older file, to list which levels look different. Levels are matched by world and place in that world, so adding a new world lists its levels as NEW instead of every later level as changed (a renumbered level may still show as changed because its level number is drawn on screen)
+- with the random numbers fixed, pictures of each level at the start and 4 seconds in, compared with the older file, to list which levels look different. Levels are matched by world and place in that world, so adding a new world lists its levels as NEW instead of every later level as changed (a renumbered level may still show as changed because its level number is drawn on screen). The older file is checked from a temporary copy next to the game, so it uses the same Resources pictures
 
 Results: `report/report.html` (table with pictures) and `report/summary.txt`. Exit code 1 means a problem was found.
 
