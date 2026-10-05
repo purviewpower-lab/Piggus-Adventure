@@ -1,5 +1,5 @@
 {
- "file": "/mnt/attach/project-files/game/dino-work/merged4.html",
+ "file": "/mnt/attach/project-files/game/dino-work/merged5.html",
  "errors": [],
  "levels": {
   "1": {
@@ -186,8 +186,8 @@
     "rex"
    ],
    "realState": "play",
-   "diff": 0,
-   "change": "looks the same"
+   "diff": 0.0078125,
+   "change": "CHANGED"
   },
   "12": {
    "world": "Dino Jungle",
@@ -195,17 +195,17 @@
    "picStart": "pictures/L12-start.png",
    "picPlay": "pictures/L12-playing.png",
    "godFrames": 1943,
-   "realDeaths": 27,
+   "realDeaths": 30,
    "deathKinds": [
     "splash",
     "raptor",
-    "spear",
     "tar",
+    "spear",
     "rex"
    ],
    "realState": "play",
-   "diff": 0,
-   "change": "looks the same"
+   "diff": 0.007589285714285714,
+   "change": "CHANGED"
   },
   "13": {
    "world": "Lady Squishshot's Forest",
@@ -213,7 +213,7 @@
    "picStart": "pictures/L13-start.png",
    "picPlay": "pictures/L13-playing.png",
    "godFrames": 1699,
-   "realDeaths": 31,
+   "realDeaths": 33,
    "deathKinds": [
     "rlog",
     "caught",
@@ -233,12 +233,12 @@
    "realDeaths": 36,
    "deathKinds": [
     "rlog",
+    "trap",
     "caught",
-    "splash",
     "snap",
-    "trap"
+    "splash"
    ],
-   "realState": "play",
+   "realState": "dead",
    "diff": 0,
    "change": "looks the same"
   },
@@ -248,7 +248,7 @@
    "picStart": "pictures/L15-start.png",
    "picPlay": "pictures/L15-playing.png",
    "godFrames": 2822,
-   "realDeaths": 9,
+   "realDeaths": 8,
    "deathKinds": [
     "boss hit"
    ],
@@ -261,7 +261,7 @@
   "SHARPNESS": "1.2",
   "LEVELS": "15",
   "BOSS_LEVEL": "15",
-  "sizeMB": "22.9"
+  "sizeMB": "21.8"
  },
  "LEVELS": 15,
  "whole": {
@@ -273,5 +273,8 @@
  "buffet": "OK",
  "buffetPic": "pictures/buffet-end.png",
  "problems": [],
- "changed": []
+ "changed": [
+  11,
+  12
+ ]
 }
