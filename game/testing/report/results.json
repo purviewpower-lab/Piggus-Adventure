@@ -1,5 +1,5 @@
 {
- "file": "/mnt/attach/project-files/game/dino-work/merged.html",
+ "file": "/mnt/attach/project-files/game/dino-work/merged2.html",
  "errors": [],
  "levels": {
   "1": {
@@ -186,7 +186,7 @@
     "rex"
    ],
    "realState": "play",
-   "diff": 0.5214285714285715,
+   "diff": 0.009821428571428571,
    "change": "CHANGED"
   },
   "12": {
@@ -204,8 +204,8 @@
     "rex"
    ],
    "realState": "play",
-   "diff": 0,
-   "change": "looks the same"
+   "diff": 0.019196428571428573,
+   "change": "CHANGED"
   },
   "13": {
    "world": "Lady Squishshot's Forest",
@@ -261,7 +261,7 @@
   "SHARPNESS": "1.2",
   "LEVELS": "15",
   "BOSS_LEVEL": "15",
-  "sizeMB": "21.4"
+  "sizeMB": "22.8"
  },
  "LEVELS": 15,
  "whole": {
@@ -274,6 +274,7 @@
  "buffetPic": "pictures/buffet-end.png",
  "problems": [],
  "changed": [
-  11
+  11,
+  12
  ]
 }
