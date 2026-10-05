@@ -1,4 +1,4 @@
-Piggus Adventure check: merged3.html  compared with latest.html
+Piggus Adventure check: merged4.html  compared with latest.html
 Settings: SHARPNESS 1.2, LEVELS 15, file 22.9 MB
 Whole game: robot played from Level 1 to the end (5 Buffet rounds on the way). Buffet on its own: OK
 No problems found.
