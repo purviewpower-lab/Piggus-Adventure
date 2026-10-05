@@ -1,0 +1,279 @@
+{
+ "file": "/mnt/attach/project-files/game/dino-work/merged.html",
+ "errors": [],
+ "levels": {
+  "1": {
+   "world": "Sunny Meadow",
+   "problems": [],
+   "picStart": "pictures/L1-start.png",
+   "picPlay": "pictures/L1-playing.png",
+   "godFrames": 197,
+   "realDeaths": 37,
+   "deathKinds": [
+    "squish",
+    "splash"
+   ],
+   "realState": "play",
+   "diff": 0,
+   "change": "looks the same"
+  },
+  "2": {
+   "world": "Sunny Meadow",
+   "problems": [],
+   "picStart": "pictures/L2-start.png",
+   "picPlay": "pictures/L2-playing.png",
+   "godFrames": 1609,
+   "realDeaths": 41,
+   "deathKinds": [
+    "squish",
+    "splash",
+    "caught"
+   ],
+   "realState": "play",
+   "diff": 0,
+   "change": "looks the same"
+  },
+  "3": {
+   "world": "Desert Dunes",
+   "problems": [],
+   "picStart": "pictures/L3-start.png",
+   "picPlay": "pictures/L3-playing.png",
+   "godFrames": 233,
+   "realDeaths": 39,
+   "deathKinds": [
+    "tumble",
+    "sink",
+    "camel",
+    "prick"
+   ],
+   "realState": "play",
+   "diff": 0,
+   "change": "looks the same"
+  },
+  "4": {
+   "world": "Desert Dunes",
+   "problems": [],
+   "picStart": "pictures/L4-start.png",
+   "picPlay": "pictures/L4-playing.png",
+   "godFrames": 252,
+   "realDeaths": 39,
+   "deathKinds": [
+    "tumble",
+    "sting",
+    "prick",
+    "sink",
+    "camel",
+    "mummy"
+   ],
+   "realState": "play",
+   "diff": 0,
+   "change": "looks the same"
+  },
+  "5": {
+   "world": "Super Snoutmarket",
+   "problems": [],
+   "picStart": "pictures/L5-start.png",
+   "picPlay": "pictures/L5-playing.png",
+   "godFrames": 4258,
+   "realDeaths": 15,
+   "deathKinds": [
+    "capy"
+   ],
+   "realState": "play",
+   "diff": 0,
+   "change": "looks the same"
+  },
+  "6": {
+   "world": "Super Snoutmarket",
+   "problems": [],
+   "picStart": "pictures/L6-start.png",
+   "picPlay": "pictures/L6-playing.png",
+   "godFrames": 4703,
+   "realDeaths": 14,
+   "deathKinds": [
+    "capy",
+    "bacon"
+   ],
+   "realState": "play",
+   "diff": 0,
+   "change": "looks the same"
+  },
+  "7": {
+   "world": "Wrongfoot Prison",
+   "problems": [],
+   "picStart": "pictures/L7-start.png",
+   "picPlay": "pictures/L7-playing.png",
+   "godFrames": 513,
+   "realDeaths": 16,
+   "deathKinds": [
+    "alarm",
+    "dog",
+    "guard",
+    "trapdoor",
+    "fall",
+    "laser"
+   ],
+   "realState": "dead",
+   "diff": 0,
+   "change": "looks the same"
+  },
+  "8": {
+   "world": "Wrongfoot Prison",
+   "problems": [],
+   "picStart": "pictures/L8-start.png",
+   "picPlay": "pictures/L8-playing.png",
+   "godFrames": 774,
+   "realDeaths": 18,
+   "deathKinds": [
+    "dog",
+    "guard",
+    "laser",
+    "alarm",
+    "fall",
+    "door",
+    "light"
+   ],
+   "realState": "dead",
+   "diff": 0,
+   "change": "looks the same"
+  },
+  "9": {
+   "world": "Under the Sea",
+   "problems": [],
+   "picStart": "pictures/L9-start.png",
+   "picPlay": "pictures/L9-playing.png",
+   "godFrames": 1741,
+   "realDeaths": 16,
+   "deathKinds": [
+    "hook",
+    "crab",
+    "octo",
+    "shark"
+   ],
+   "realState": "play",
+   "diff": 0,
+   "change": "looks the same"
+  },
+  "10": {
+   "world": "Under the Sea",
+   "problems": [],
+   "picStart": "pictures/L10-start.png",
+   "picPlay": "pictures/L10-playing.png",
+   "godFrames": 332,
+   "realDeaths": 24,
+   "deathKinds": [
+    "jelly",
+    "shark",
+    "octo",
+    "hook",
+    "crab"
+   ],
+   "realState": "dead",
+   "diff": 0,
+   "change": "looks the same"
+  },
+  "11": {
+   "world": "Dino Jungle",
+   "problems": [],
+   "picStart": "pictures/L11-start.png",
+   "picPlay": "pictures/L11-playing.png",
+   "godFrames": 2824,
+   "realDeaths": 21,
+   "deathKinds": [
+    "splash",
+    "raptor",
+    "spear",
+    "rex"
+   ],
+   "realState": "play",
+   "diff": 0.5214285714285715,
+   "change": "CHANGED"
+  },
+  "12": {
+   "world": "Dino Jungle",
+   "problems": [],
+   "picStart": "pictures/L12-start.png",
+   "picPlay": "pictures/L12-playing.png",
+   "godFrames": 1943,
+   "realDeaths": 27,
+   "deathKinds": [
+    "splash",
+    "raptor",
+    "spear",
+    "tar",
+    "rex"
+   ],
+   "realState": "play",
+   "diff": 0,
+   "change": "looks the same"
+  },
+  "13": {
+   "world": "Lady Squishshot's Forest",
+   "problems": [],
+   "picStart": "pictures/L13-start.png",
+   "picPlay": "pictures/L13-playing.png",
+   "godFrames": 1699,
+   "realDeaths": 31,
+   "deathKinds": [
+    "rlog",
+    "caught",
+    "splash",
+    "snap"
+   ],
+   "realState": "play",
+   "diff": 0,
+   "change": "looks the same"
+  },
+  "14": {
+   "world": "Lady Squishshot's Forest",
+   "problems": [],
+   "picStart": "pictures/L14-start.png",
+   "picPlay": "pictures/L14-playing.png",
+   "godFrames": 320,
+   "realDeaths": 36,
+   "deathKinds": [
+    "rlog",
+    "caught",
+    "splash",
+    "snap",
+    "trap"
+   ],
+   "realState": "play",
+   "diff": 0,
+   "change": "looks the same"
+  },
+  "15": {
+   "world": "Dino-Capy boss",
+   "problems": [],
+   "picStart": "pictures/L15-start.png",
+   "picPlay": "pictures/L15-playing.png",
+   "godFrames": 2822,
+   "realDeaths": 9,
+   "deathKinds": [
+    "boss hit"
+   ],
+   "realState": "boss",
+   "diff": 0,
+   "change": "looks the same"
+  }
+ },
+ "settings": {
+  "SHARPNESS": "1.2",
+  "LEVELS": "15",
+  "BOSS_LEVEL": "15",
+  "sizeMB": "21.4"
+ },
+ "LEVELS": 15,
+ "whole": {
+  "finished": true,
+  "buffets": 5,
+  "reachedEnd": true,
+  "reached": 15
+ },
+ "buffet": "OK",
+ "buffetPic": "pictures/buffet-end.png",
+ "problems": [],
+ "changed": [
+  11
+ ]
+}
