@@ -1,21 +1,21 @@
-Piggus Adventure check: Piggus-Adventure.html  compared with Piggus-Adventure-15-levels-v25.html
+Piggus Adventure check: voiced.html  compared with pre-voice.html
 Settings: SHARPNESS 1.2, LEVELS 15, file 22.6 MB
-Whole game: robot played from Level 1 to the end (4 Buffet rounds on the way). Buffet on its own: OK
+Whole game: robot played from Level 1 to the end (3 Buffet rounds on the way). Buffet on its own: OK
 No problems found.
 No level looks different from the older file.
 
-Level  1 Sunny Meadow               finished: yes (3s)   real play: caught 35x   vs older file: looks the same
-Level  2 Sunny Meadow               finished: yes (27s)   real play: caught 34x   vs older file: looks the same
-Level  3 Desert Dunes               finished: yes (4s)   real play: caught 40x   vs older file: looks the same
-Level  4 Desert Dunes               finished: yes (4s)   real play: caught 37x   vs older file: looks the same
+Level  1 Sunny Meadow               finished: yes (3s)   real play: caught 38x   vs older file: looks the same
+Level  2 Sunny Meadow               finished: yes (27s)   real play: caught 41x   vs older file: looks the same
+Level  3 Desert Dunes               finished: yes (4s)   real play: caught 39x   vs older file: looks the same
+Level  4 Desert Dunes               finished: yes (4s)   real play: caught 39x   vs older file: looks the same
 Level  5 Super Snoutmarket          finished: yes (71s)   real play: caught 15x   vs older file: looks the same
-Level  6 Super Snoutmarket          finished: yes (38s)   real play: caught 3x   vs older file: looks the same
-Level  7 Wrongfoot Prison           finished: yes (29s)   real play: caught 15x   vs older file: looks the same
-Level  8 Wrongfoot Prison           finished: yes (5s)   real play: caught 16x   vs older file: looks the same
-Level  9 Under the Sea              finished: yes (29s)   real play: caught 22x   vs older file: looks the same
-Level 10 Under the Sea              finished: yes (6s)   real play: caught 19x   vs older file: looks the same
-Level 11 Dino Jungle                finished: yes (25s)   real play: caught 17x   vs older file: looks the same
-Level 12 Dino Jungle                finished: yes (32s)   real play: caught 25x   vs older file: looks the same
-Level 13 Lady Squishshot's Forest   finished: yes (5s)   real play: caught 39x   vs older file: looks the same
-Level 14 Lady Squishshot's Forest   finished: yes (5s)   real play: caught 36x   vs older file: looks the same
-Level 15 Dino-Capy boss             finished: yes (55s)   real play: caught 6x   vs older file: looks the same
+Level  6 Super Snoutmarket          finished: yes (78s)   real play: caught 14x   vs older file: looks the same
+Level  7 Wrongfoot Prison           finished: yes (9s)   real play: caught 30x   vs older file: looks the same
+Level  8 Wrongfoot Prison           finished: yes (13s)   real play: caught 24x   vs older file: looks the same
+Level  9 Under the Sea              finished: yes (29s)   real play: caught 24x   vs older file: looks the same
+Level 10 Under the Sea              finished: yes (6s)   real play: caught 24x   vs older file: looks the same
+Level 11 Dino Jungle                finished: yes (25s)   real play: caught 15x   vs older file: looks the same
+Level 12 Dino Jungle                finished: yes (31s)   real play: caught 30x   vs older file: looks the same
+Level 13 Lady Squishshot's Forest   finished: yes (5s)   real play: caught 32x   vs older file: looks the same
+Level 14 Lady Squishshot's Forest   finished: yes (6s)   real play: caught 35x   vs older file: looks the same
+Level 15 Dino-Capy boss             finished: yes (48s)   real play: caught 8x   vs older file: looks the same
