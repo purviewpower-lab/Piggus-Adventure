@@ -30,8 +30,8 @@
     "caught"
    ],
    "realState": "play",
-   "diff": 0.07075892857142857,
-   "change": "CHANGED"
+   "diff": 0,
+   "change": "looks the same"
   },
   "3": {
    "world": "Desert Dunes",
@@ -104,12 +104,12 @@
    "picStart": "pictures/L7-start.png",
    "picPlay": "pictures/L7-playing.png",
    "godFrames": 1723,
-   "realDeaths": 13,
+   "realDeaths": 17,
    "deathKinds": [
     "alarm",
     "fall",
     "dog",
-    "guard",
+    "door",
     "laser"
    ],
    "realState": "play",
@@ -122,15 +122,16 @@
    "picStart": "pictures/L8-start.png",
    "picPlay": "pictures/L8-playing.png",
    "godFrames": 290,
-   "realDeaths": 19,
+   "realDeaths": 23,
    "deathKinds": [
     "dog",
-    "alarm",
     "fall",
     "laser",
+    "trapdoor",
+    "alarm",
     "guard"
    ],
-   "realState": "play",
+   "realState": "ready",
    "diff": 0,
    "change": "looks the same"
   },
@@ -140,12 +141,12 @@
    "picStart": "pictures/L9-start.png",
    "picPlay": "pictures/L9-playing.png",
    "godFrames": 1741,
-   "realDeaths": 21,
+   "realDeaths": 17,
    "deathKinds": [
     "hook",
-    "crab",
+    "shark",
     "octo",
-    "shark"
+    "crab"
    ],
    "realState": "play",
    "diff": 0,
@@ -157,15 +158,15 @@
    "picStart": "pictures/L10-start.png",
    "picPlay": "pictures/L10-playing.png",
    "godFrames": 332,
-   "realDeaths": 28,
+   "realDeaths": 21,
    "deathKinds": [
     "jelly",
     "hook",
+    "crab",
     "shark",
-    "octo",
-    "crab"
+    "octo"
    ],
-   "realState": "play",
+   "realState": "dead",
    "diff": 0,
    "change": "looks the same"
   },
@@ -175,12 +176,13 @@
    "picStart": "pictures/L11-start.png",
    "picPlay": "pictures/L11-playing.png",
    "godFrames": 1500,
-   "realDeaths": 23,
+   "realDeaths": 16,
    "deathKinds": [
-    "spear",
     "raptor",
+    "rex",
     "lavafall",
-    "rex"
+    "lava",
+    "spear"
    ],
    "realState": "play",
    "diff": 0,
@@ -192,15 +194,15 @@
    "picStart": "pictures/L12-start.png",
    "picPlay": "pictures/L12-playing.png",
    "godFrames": 1896,
-   "realDeaths": 21,
+   "realDeaths": 25,
    "deathKinds": [
-    "lavafall",
+    "rex",
     "raptor",
-    "spear",
     "tar",
-    "rex"
+    "spear",
+    "lavafall"
    ],
-   "realState": "dead",
+   "realState": "play",
    "diff": 0,
    "change": "looks the same"
   },
@@ -209,13 +211,14 @@
    "problems": [],
    "picStart": "pictures/L13-start.png",
    "picPlay": "pictures/L13-playing.png",
-   "godFrames": 306,
-   "realDeaths": 36,
+   "godFrames": 1699,
+   "realDeaths": 32,
    "deathKinds": [
     "rlog",
     "splash",
     "snap",
-    "caught"
+    "caught",
+    "trap"
    ],
    "realState": "play",
    "diff": 0,
@@ -226,15 +229,16 @@
    "problems": [],
    "picStart": "pictures/L14-start.png",
    "picPlay": "pictures/L14-playing.png",
-   "godFrames": 318,
-   "realDeaths": 36,
+   "godFrames": 320,
+   "realDeaths": 39,
    "deathKinds": [
     "rlog",
+    "snap",
     "caught",
     "splash",
-    "snap"
+    "trap"
    ],
-   "realState": "dead",
+   "realState": "play",
    "diff": 0,
    "change": "looks the same"
   },
@@ -243,8 +247,8 @@
    "problems": [],
    "picStart": "pictures/L15-start.png",
    "picPlay": "pictures/L15-playing.png",
-   "godFrames": 3379,
-   "realDeaths": 7,
+   "godFrames": 3341,
+   "realDeaths": 6,
    "deathKinds": [
     "boss hit"
    ],
@@ -262,14 +266,12 @@
  "LEVELS": 15,
  "whole": {
   "finished": true,
-  "buffets": 4,
+  "buffets": 5,
   "reachedEnd": true,
   "reached": 15
  },
  "buffet": "OK",
  "buffetPic": "pictures/buffet-end.png",
  "problems": [],
- "changed": [
-  2
- ]
+ "changed": []
 }
