@@ -1,5 +1,5 @@
 {
- "file": "/mnt/attach/project-files/game/dino-work/voiced.html",
+ "file": "/home/claude/piggus-adventure/game/Piggus-Adventure.html",
  "errors": [],
  "levels": {
   "1": {
@@ -8,7 +8,7 @@
    "picStart": "pictures/L1-start.png",
    "picPlay": "pictures/L1-playing.png",
    "godFrames": 197,
-   "realDeaths": 38,
+   "realDeaths": 32,
    "deathKinds": [
     "squish",
     "splash"
@@ -23,7 +23,7 @@
    "picStart": "pictures/L2-start.png",
    "picPlay": "pictures/L2-playing.png",
    "godFrames": 1609,
-   "realDeaths": 41,
+   "realDeaths": 33,
    "deathKinds": [
     "squish",
     "splash",
@@ -39,12 +39,12 @@
    "picStart": "pictures/L3-start.png",
    "picPlay": "pictures/L3-playing.png",
    "godFrames": 233,
-   "realDeaths": 39,
+   "realDeaths": 40,
    "deathKinds": [
     "tumble",
     "sink",
-    "camel",
-    "prick"
+    "prick",
+    "camel"
    ],
    "realState": "play",
    "diff": 0,
@@ -56,14 +56,14 @@
    "picStart": "pictures/L4-start.png",
    "picPlay": "pictures/L4-playing.png",
    "godFrames": 252,
-   "realDeaths": 39,
+   "realDeaths": 37,
    "deathKinds": [
     "tumble",
+    "mummy",
     "sting",
     "prick",
-    "sink",
     "camel",
-    "mummy"
+    "sink"
    ],
    "realState": "play",
    "diff": 0,
@@ -88,8 +88,8 @@
    "problems": [],
    "picStart": "pictures/L6-start.png",
    "picPlay": "pictures/L6-playing.png",
-   "godFrames": 4703,
-   "realDeaths": 14,
+   "godFrames": 2309,
+   "realDeaths": 3,
    "deathKinds": [
     "capy",
     "bacon"
@@ -103,14 +103,15 @@
    "problems": [],
    "picStart": "pictures/L7-start.png",
    "picPlay": "pictures/L7-playing.png",
-   "godFrames": 513,
-   "realDeaths": 30,
+   "godFrames": 1723,
+   "realDeaths": 24,
    "deathKinds": [
     "alarm",
-    "dog",
-    "door",
     "fall",
+    "door",
     "guard",
+    "dog",
+    "trapdoor",
     "laser"
    ],
    "realState": "play",
@@ -122,15 +123,14 @@
    "problems": [],
    "picStart": "pictures/L8-start.png",
    "picPlay": "pictures/L8-playing.png",
-   "godFrames": 774,
-   "realDeaths": 24,
+   "godFrames": 290,
+   "realDeaths": 10,
    "deathKinds": [
     "dog",
-    "guard",
+    "alarm",
     "fall",
     "laser",
-    "door",
-    "alarm"
+    "light"
    ],
    "realState": "play",
    "diff": 0,
@@ -142,11 +142,11 @@
    "picStart": "pictures/L9-start.png",
    "picPlay": "pictures/L9-playing.png",
    "godFrames": 1741,
-   "realDeaths": 24,
+   "realDeaths": 22,
    "deathKinds": [
     "hook",
-    "shark",
     "octo",
+    "shark",
     "crab"
    ],
    "realState": "play",
@@ -159,13 +159,13 @@
    "picStart": "pictures/L10-start.png",
    "picPlay": "pictures/L10-playing.png",
    "godFrames": 332,
-   "realDeaths": 24,
+   "realDeaths": 20,
    "deathKinds": [
     "jelly",
-    "shark",
-    "octo",
     "hook",
-    "crab"
+    "crab",
+    "octo",
+    "shark"
    ],
    "realState": "play",
    "diff": 0,
@@ -176,14 +176,14 @@
    "problems": [],
    "picStart": "pictures/L11-start.png",
    "picPlay": "pictures/L11-playing.png",
-   "godFrames": 1473,
-   "realDeaths": 15,
+   "godFrames": 1500,
+   "realDeaths": 19,
    "deathKinds": [
     "spear",
-    "rex",
     "lavafall",
     "lava",
-    "raptor"
+    "raptor",
+    "rex"
    ],
    "realState": "play",
    "diff": 0,
@@ -194,13 +194,14 @@
    "problems": [],
    "picStart": "pictures/L12-start.png",
    "picPlay": "pictures/L12-playing.png",
-   "godFrames": 1869,
-   "realDeaths": 30,
+   "godFrames": 1896,
+   "realDeaths": 19,
    "deathKinds": [
     "lavafall",
     "raptor",
+    "tar",
     "spear",
-    "tar"
+    "rex"
    ],
    "realState": "play",
    "diff": 0,
@@ -212,12 +213,12 @@
    "picStart": "pictures/L13-start.png",
    "picPlay": "pictures/L13-playing.png",
    "godFrames": 306,
-   "realDeaths": 32,
+   "realDeaths": 39,
    "deathKinds": [
     "rlog",
+    "snap",
     "caught",
-    "splash",
-    "snap"
+    "splash"
    ],
    "realState": "play",
    "diff": 0,
@@ -228,15 +229,15 @@
    "problems": [],
    "picStart": "pictures/L14-start.png",
    "picPlay": "pictures/L14-playing.png",
-   "godFrames": 348,
-   "realDeaths": 35,
+   "godFrames": 318,
+   "realDeaths": 36,
    "deathKinds": [
     "rlog",
     "caught",
-    "snap",
-    "splash"
+    "splash",
+    "snap"
    ],
-   "realState": "play",
+   "realState": "dead",
    "diff": 0,
    "change": "looks the same"
   },
@@ -245,8 +246,8 @@
    "problems": [],
    "picStart": "pictures/L15-start.png",
    "picPlay": "pictures/L15-playing.png",
-   "godFrames": 2860,
-   "realDeaths": 8,
+   "godFrames": 3426,
+   "realDeaths": 6,
    "deathKinds": [
     "boss hit"
    ],
@@ -264,7 +265,7 @@
  "LEVELS": 15,
  "whole": {
   "finished": true,
-  "buffets": 3,
+  "buffets": 4,
   "reachedEnd": true,
   "reached": 15
  },

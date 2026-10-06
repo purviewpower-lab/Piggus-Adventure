@@ -14,7 +14,8 @@
 //      can still be finished and moves on to the next one.
 //   4. "Real" run on each level: a robot plays for about a minute with no cheats, so Piggus
 //      gets caught, crashes and restarts, which exercises all the oops/retry code.
-//   5. Takes pictures of each level and, with the random numbers fixed, compares them with the
+//   5. Plays the whole game again in Hard mode (when the game has one): longer levels, faster dangers, a tougher boss.
+//   6. Takes pictures of each level and, with the random numbers fixed, compares them with the
 //      older file to say which levels look different (those are the ones worth playing).
 // Results go in report/ next to this file: report.html (open in a browser) and summary.txt.
 
@@ -194,6 +195,7 @@ async function checkFile(browser, file, opts) {
   const setting = n => (src.match(new RegExp('const ' + n + '\\s*=\\s*([^;]+);')) || [])[1];
   res.settings = { SHARPNESS: setting('SHARPNESS'), LEVELS: setting('LEVELS'), BOSS_LEVEL: setting('BOSS_LEVEL'), sizeMB: (src.length / 1048576).toFixed(1) };
   const page = await openGame(browser, file, errors);
+  if (opts.hard) await page.evaluate(() => { hardMode = true; });
   const LEVELS = await page.evaluate(() => LEVELS);
   res.LEVELS = LEVELS;
 
@@ -239,6 +241,10 @@ async function checkFile(browser, file, opts) {
   const cur = log[0].length ? log[0][log[0].length - 1].lvl : 0;
   whole.reached = cur;
 
+  if (opts.hard) {
+    // Hard mode must really be harder: longer hopping levels, a boss with more health
+    res.hardInfo = await page.evaluate(() => { const o = {}; build(1); o.lanesHard = N; hardMode = false; build(1); o.lanesNormal = N; hardMode = true; build(BOSS_LEVEL); o.bossHP = bs.cp.hp; return o; });
+  }
   // a minute of real play on every level, no cheats: Piggus gets caught and restarts
   for (let l = 1; l <= LEVELS; l++) {
     const info = res.levels[l];
@@ -274,6 +280,11 @@ function compare(a, b) {
 const browser = await chromium.launch({ args: ['--autoplay-policy=no-user-gesture-required', '--mute-audio', '--allow-file-access-from-files'] });
 console.log('Checking ' + path.basename(NEW) + ' ...');
 const res = await checkFile(browser, NEW, { full: true, pictures: true });
+let hard = null;
+if (fs.readFileSync(NEW, 'utf8').includes('let hardMode=')) {
+  console.log('Playing it again in Hard mode ...');
+  hard = await checkFile(browser, NEW, { full: true, pictures: false, hard: true });
+}
 let old = null;
 if (OLD && fs.existsSync(OLD)) {
   console.log('Comparing with ' + path.basename(OLD) + ' ...');
@@ -309,6 +320,21 @@ for (let l = 1; l <= L; l++) {
   rows.push({ l, ...v, secs });
   lines.push(`Level ${String(l).padStart(2)} ${v.world.padEnd(26)} finished: ${v.godFrames ? 'yes (' + secs + ')' : 'NO'}   real play: caught ${v.realDeaths}x   vs older file: ${change}${v.problems.length ? '   PROBLEM' : ''}`);
 }
+const hardLines = [];
+if (hard) {
+  probs.push(...hard.errors.map(e => 'Hard mode: ' + e));
+  if (!hard.whole.finished) probs.push(`Hard mode: whole-game run did not reach the end${hard.whole.skipped ? ' (stuck on level ' + hard.whole.skipped.join(', ') + ')' : ' (stopped on level ' + hard.whole.reached + ')'}`);
+  const hi = hard.hardInfo || {};
+  if (!(hi.lanesHard > hi.lanesNormal)) probs.push('Hard mode: Level 1 is not longer than in Normal mode');
+  if (!(hi.bossHP > 5)) probs.push('Hard mode: Dino-Capy does not have more health than in Normal mode');
+  hardLines.push('', `Hard mode: ${hard.whole.finished ? 'robot played from Level 1 to the end' : 'DID NOT FINISH'}. Level 1 is ${hi.lanesHard} rows (Normal ${hi.lanesNormal}); Dino-Capy needs ${hi.bossHP} bops.`);
+  for (let l = 1; l <= hard.LEVELS; l++) {
+    const v = hard.levels[l];
+    probs.push(...v.problems.map(p => `Hard mode level ${l}: ${p}`));
+    if (v.realDeaths === 0 && l < hard.LEVELS) probs.push(`Hard mode level ${l}: in a minute of real play the robot was never caught`);
+    hardLines.push(`Hard ${String(l).padStart(2)} ${v.world.padEnd(26)} finished: ${v.godFrames ? 'yes (' + Math.round(v.godFrames / 60) + 's)' : 'NO'}   real play: caught ${v.realDeaths}x${v.problems.length ? '   PROBLEM' : ''}`);
+  }
+}
 const changed = rows.filter(r => r.change === 'CHANGED' || r.change === 'NEW').map(r => r.l);
 const head = [
   `Piggus Adventure check: ${path.basename(NEW)}${old ? '  compared with ' + path.basename(OLD) : ''}`,
@@ -317,14 +343,14 @@ const head = [
   probs.length ? `PROBLEMS (${probs.length}):\n  - ` + probs.join('\n  - ') : 'No problems found.',
   old ? (changed.length ? `Levels that look different from the older file: ${changed.join(', ')}` : 'No level looks different from the older file.') : '',
   ''];
-const summary = head.concat(lines).join('\n');
+const summary = head.concat(lines, hardLines).join('\n');
 fs.writeFileSync(path.join(OUT, 'summary.txt'), summary + '\n');
 fs.writeFileSync(path.join(OUT, 'results.json'), JSON.stringify({ ...res, thumbs: undefined, problems: probs, changed }, null, 1));
 const esc = s => String(s).replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
 fs.writeFileSync(path.join(OUT, 'report.html'), `<!doctype html><meta charset="utf-8"><title>Piggus check</title>
 <style>body{font:15px system-ui,sans-serif;margin:20px;background:#fff7fb;color:#3a2340}h1{color:#c2307f}table{border-collapse:collapse}td,th{padding:6px 10px;border-bottom:1px solid #ecd;text-align:left;vertical-align:top}
 img{width:256px;border-radius:8px;border:1px solid #dcc}.bad{color:#b00;font-weight:bold}.chg{color:#7a5cff;font-weight:bold}pre{white-space:pre-wrap;background:#fff;padding:12px;border-radius:8px}</style>
-<h1>Piggus Adventure check</h1><pre>${esc(head.join('\n'))}</pre><table><tr><th>Level</th><th>Finished?</th><th>Real play</th><th>vs older file</th><th>Start</th><th>4 seconds in</th></tr>
+<h1>Piggus Adventure check</h1><pre>${esc(head.join('\n'))}</pre>${hardLines.length ? '<pre>' + esc(hardLines.join('\n')) + '</pre>' : ''}<table><tr><th>Level</th><th>Finished?</th><th>Real play</th><th>vs older file</th><th>Start</th><th>4 seconds in</th></tr>
 ${rows.map(r => `<tr><td><b>${r.l}</b> ${esc(r.world)}${r.problems.length ? '<div class=bad>' + r.problems.map(esc).join('<br>') + '</div>' : ''}</td><td>${r.godFrames ? 'yes, ' + r.secs : '<span class=bad>no</span>'}</td><td>caught ${r.realDeaths}x<br><small>${esc((r.deathKinds || []).join(', '))}</small></td><td class="${r.change !== 'looks the same' ? 'chg' : ''}">${r.change}</td><td><img src="${r.picStart}"></td><td><img src="${r.picPlay}"></td></tr>`).join('\n')}
 </table>${res.buffetPic ? `<p>Buffet end screen:<br><img src="${res.buffetPic}"></p>` : ''}`);
 console.log(summary);
