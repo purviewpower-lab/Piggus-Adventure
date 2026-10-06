@@ -1,38 +1,38 @@
-Piggus Adventure check: Piggus-Adventure.html  compared with Piggus-Adventure-15-levels-v27.html
+Piggus Adventure check: Piggus-Adventure.html  compared with Piggus-Adventure-15-levels-v28.html
 Settings: SHARPNESS 1.2, LEVELS 15, file 22.6 MB
 Whole game: robot played from Level 1 to the end (4 Buffet rounds on the way). Buffet on its own: OK
 No problems found.
-No level looks different from the older file.
+Levels that look different from the older file: 2
 
 Level  1 Sunny Meadow               finished: yes (3s)   real play: caught 32x   vs older file: looks the same
-Level  2 Sunny Meadow               finished: yes (27s)   real play: caught 33x   vs older file: looks the same
+Level  2 Sunny Meadow               finished: yes (27s)   real play: caught 33x   vs older file: CHANGED
 Level  3 Desert Dunes               finished: yes (4s)   real play: caught 40x   vs older file: looks the same
 Level  4 Desert Dunes               finished: yes (4s)   real play: caught 37x   vs older file: looks the same
 Level  5 Super Snoutmarket          finished: yes (71s)   real play: caught 15x   vs older file: looks the same
 Level  6 Super Snoutmarket          finished: yes (38s)   real play: caught 3x   vs older file: looks the same
-Level  7 Wrongfoot Prison           finished: yes (29s)   real play: caught 24x   vs older file: looks the same
-Level  8 Wrongfoot Prison           finished: yes (5s)   real play: caught 10x   vs older file: looks the same
-Level  9 Under the Sea              finished: yes (29s)   real play: caught 22x   vs older file: looks the same
-Level 10 Under the Sea              finished: yes (6s)   real play: caught 20x   vs older file: looks the same
-Level 11 Dino Jungle                finished: yes (25s)   real play: caught 19x   vs older file: looks the same
-Level 12 Dino Jungle                finished: yes (32s)   real play: caught 19x   vs older file: looks the same
-Level 13 Lady Squishshot's Forest   finished: yes (5s)   real play: caught 39x   vs older file: looks the same
+Level  7 Wrongfoot Prison           finished: yes (29s)   real play: caught 13x   vs older file: looks the same
+Level  8 Wrongfoot Prison           finished: yes (5s)   real play: caught 19x   vs older file: looks the same
+Level  9 Under the Sea              finished: yes (29s)   real play: caught 21x   vs older file: looks the same
+Level 10 Under the Sea              finished: yes (6s)   real play: caught 28x   vs older file: looks the same
+Level 11 Dino Jungle                finished: yes (25s)   real play: caught 23x   vs older file: looks the same
+Level 12 Dino Jungle                finished: yes (32s)   real play: caught 21x   vs older file: looks the same
+Level 13 Lady Squishshot's Forest   finished: yes (5s)   real play: caught 36x   vs older file: looks the same
 Level 14 Lady Squishshot's Forest   finished: yes (5s)   real play: caught 36x   vs older file: looks the same
-Level 15 Dino-Capy boss             finished: yes (57s)   real play: caught 6x   vs older file: looks the same
+Level 15 Dino-Capy boss             finished: yes (56s)   real play: caught 7x   vs older file: looks the same
 
 Hard mode: robot played from Level 1 to the end. Level 1 is 26 rows (Normal 20); Dino-Capy needs 8 bops.
-Hard  1 Sunny Meadow               finished: yes (4s)   real play: caught 36x
-Hard  2 Sunny Meadow               finished: yes (28s)   real play: caught 38x
-Hard  3 Desert Dunes               finished: yes (5s)   real play: caught 45x
+Hard  1 Sunny Meadow               finished: yes (4s)   real play: caught 35x
+Hard  2 Sunny Meadow               finished: yes (28s)   real play: caught 41x
+Hard  3 Desert Dunes               finished: yes (5s)   real play: caught 44x
 Hard  4 Desert Dunes               finished: yes (28s)   real play: caught 38x
 Hard  5 Super Snoutmarket          finished: yes (49s)   real play: caught 9x
 Hard  6 Super Snoutmarket          finished: yes (43s)   real play: caught 14x
-Hard  7 Wrongfoot Prison           finished: yes (29s)   real play: caught 22x
-Hard  8 Wrongfoot Prison           finished: yes (6s)   real play: caught 19x
+Hard  7 Wrongfoot Prison           finished: yes (29s)   real play: caught 19x
+Hard  8 Wrongfoot Prison           finished: yes (6s)   real play: caught 26x
 Hard  9 Under the Sea              finished: yes (6s)   real play: caught 14x
-Hard 10 Under the Sea              finished: yes (29s)   real play: caught 25x
-Hard 11 Dino Jungle                finished: yes (25s)   real play: caught 19x
-Hard 12 Dino Jungle                finished: yes (33s)   real play: caught 25x
+Hard 10 Under the Sea              finished: yes (29s)   real play: caught 24x
+Hard 11 Dino Jungle                finished: yes (25s)   real play: caught 20x
+Hard 12 Dino Jungle                finished: yes (56s)   real play: caught 25x
 Hard 13 Lady Squishshot's Forest   finished: yes (6s)   real play: caught 33x
-Hard 14 Lady Squishshot's Forest   finished: yes (6s)   real play: caught 37x
-Hard 15 Dino-Capy boss             finished: yes (74s)   real play: caught 7x
+Hard 14 Lady Squishshot's Forest   finished: yes (7s)   real play: caught 37x
+Hard 15 Dino-Capy boss             finished: yes (79s)   real play: caught 6x
