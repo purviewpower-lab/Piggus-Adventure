@@ -40,7 +40,13 @@ Order since 2026-10-04: Meadow, Desert, Supermarket, Prison, Under the Sea, Dino
 - **Squish Gem**: 1 in 5 chance per try. Gives a few seconds of glowing invincibility.
 - **Buffet bonus round**: sometimes after a level. Catch sweets and cakes, avoid broccoli ("Ugh!", and it takes away 50 points, shown as a red -50 with the score box flashing red; the score never goes below 0; added 2026-10-04), space bar jumps, bakery background, best score saved. Once a round (sometimes twice) a sparkly iced bun with a cherry and a pink swirl drops: Winston's Special Cherry Fizz Swirl, worth 250 points (added 2026-10-03). It was made smaller later that day, and catching it just shows a gold +250. The Buffet start screen explains it.
 - **Every level is checked** to have a safe route through before it starts.
-- **Menu (Esc or ☰ button)**: carry on, restart level, start from level 1, go to any level, volume, music on/off, next song.
+- **Menu (Esc or ☰ button)**: carry on, restart level, start from level 1, go to any level, Normal / Hard mode, volume, music on/off, next song.
+- **Hard mode** (added 2026-10-06, asked for by James's daughter): a Normal / HARD switch on the start screen (◀ ▶ or click) and a Mode line in the menu. Normal is the default and plays exactly as before; the game remembers the choice on that computer. Switching while a level is being played starts that level again in the new mode. In Hard mode a red HARD tag shows under the level box and "HARD MODE" on each level's start screen. What changes:
+  - Hopping levels (Meadow, Desert, Prison, Sea, Dino, Forest): 6 more rows to cross, fewer safe grass rows between dangers, and everything that moves is 15% faster (cars, logs, tumbleweeds, guards, dogs, scorpions, sharks, crabs, T-rexes, rolling logs, Lady Squishshot); doors, trapdoors, hooks, cavemen, lasers and searchlights come round sooner. Piggus has 10% less air under the sea.
+  - Supermarket: both levels use the harder course (level 6's), 25% longer, with trolleys 12% faster.
+  - Dino swamp: lava bombs in both swamps, and more often in the second.
+  - Boss: Dino-Capy needs 8 bops instead of 5, moves and recovers 20% quicker, throws one more toilet roll each time and slams one extra time once he's angry. Piggus still has 5 hearts.
+  - Settings at the top of the file: HARD_LANES, HARD_SPEED, HARD_GAPS, HARD_AIR, HARD_RUN_LENGTH, HARD_TROLLEY, HARD_LAVA, HARD_BOSS_HEALTH, HARD_BOSS_SPEED.
 - **Master volume** (added 2026-10-03): the Volume line in the menu (◀ ▶ or tap either end) turns everything up or down in 10% steps: music, sound effects and voice lines. The game remembers it on that computer. MASTER_VOLUME at the top of the file is the starting volume (1 = full).
 - **Instructions mention only the arrow keys and space bar** (no WASD).
 - **Toilet space-bar meter** stops getting harder after level 8, so the later levels stay doable.
@@ -61,7 +67,7 @@ Order since 2026-10-04: Meadow, Desert, Supermarket, Prison, Under the Sea, Dino
 - **Voice line file names** (mp3s in Resources) are listed in the checklist. Voices play at 75% volume (VOICE_VOLUME setting).
 
 ## Easy settings at the top of the HTML
-LEVELS, BOSS_LEVEL, SHARPNESS (1.2), BOSS_HEALTH, PIGGUS_HEARTS, DESERT_FROM (3), SHOP_FROM (5), PRISON_FROM (7), SEA_FROM (9), DINO_FROM (11), FOREST_FROM (always BOSS_LEVEL-2, so 13), LOG_SPEED (0.85), AIR_SECONDS (18), GEM_CHANCE, GEM_SECONDS, POLICE_CHANCE, BUFFET_SECONDS, MASTER_VOLUME (1), MUSIC_VOLUME (0.15), VOICE_VOLUME (0.75), TEXT_SIZE (0.8), RES (Resources folder name).
+LEVELS, BOSS_LEVEL, SHARPNESS (1.2), BOSS_HEALTH, the Hard mode settings (HARD_...), PIGGUS_HEARTS, DESERT_FROM (3), SHOP_FROM (5), PRISON_FROM (7), SEA_FROM (9), DINO_FROM (11), FOREST_FROM (always BOSS_LEVEL-2, so 13), LOG_SPEED (0.85), AIR_SECONDS (18), GEM_CHANCE, GEM_SECONDS, POLICE_CHANCE, BUFFET_SECONDS, MASTER_VOLUME (1), MUSIC_VOLUME (0.15), VOICE_VOLUME (0.75), TEXT_SIZE (0.8), RES (Resources folder name).
 
 ## Decided against (don't bring back unless I ask)
 - Ice / Frosty Mountains world (code still in the file, switched off)
