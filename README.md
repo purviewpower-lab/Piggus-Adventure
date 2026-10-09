@@ -1,6 +1,6 @@
 # Piggus Adventure
 
-A crossy-road style game for kids starring Piggus, a greedy, lovable pig squishmallow who just needs to get to the toilet. 15 levels across eight worlds, ending in a boss fight with Dino-Capy. Pick **Hard mode** on the start screen for longer, faster levels and a tougher boss.
+just a bit of fun as a side project!! A crossy-road style game for kids starring Piggus, a greedy, lovable pig squishmallow who just needs to get to the toilet. 15 levels across eight worlds, ending in a boss fight with Dino-Capy. Pick **Hard mode** on the start screen for longer, faster levels and a tougher boss.
 
 ## How to play
 
